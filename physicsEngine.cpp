@@ -384,57 +384,46 @@ node* create(int m){
     node c(40,10,220,0.6);
     node d(220,10,50,0.6);
     node e(180,10,180,0.6);
-            node f(60,10,70,0.6);
-            node g(215,10,85,0.6);
-            node h(194,10,20,0.6);
-            node j(215,10,158,0.6);
-            node k(90,10,215,0.6);
-            node l(205,10,20,0.6);
-            node m1(200,10,10,6);
-            node n(10,10,170,6);
-                        node o(30,-11,30,3);
-                        node p(121,-11,20,3);
-                        node q(225,-11,211,3);
+    node f(60,10,70,0.6);
+    node g(215,10,85,0.6);
+    node h(194,10,20,0.6);
+    node j(215,10,158,0.6);
+    node k(90,10,215,0.6);
+    node l(205,10,20,0.6);
+    node m1(200,10,10,6);
+    node n(10,10,170,6);
+    node o(30,-11,30,3);
+    node p(121,-11,20,3);
+    node q(225,-11,211,3);
+    node r(105,-11,201,3);
+    node s(110,-11,110,3);
+    node t(50,0,50,2);
+    node u(140,0,135,2);
+    node v(85,0,31,2);
+    node w(112,0,171,2);
+    node x(56,0,212,2);									
 
-
-                        node r(105,-11,201,3);
-                                node s(110,-11,110,3);
-                                node t(50,0,50,2);
-                                node u(140,0,135,2);
-                                node v(85,0,31,2);
-                                        node w(112,0,171,2);
-                                        node x(56,0,212,2);
-//											node y(30,0,30,1);
-//											node z(60,0,60,1);
-//											node a1(30,0,30,1);
-//											node b1(60,0,60,1);
-//											node c1(30,0,30,1);
-//											node d1(60,0,60,1);
-//										node e1(30,0,30,1);
-//										node f1(5.0,0,5.0,1);
-//							node g1(30,0,30,1);
-
-        ca[0]=a;
+    ca[0]=a;
     ca[1]=b;
     ca[2]=c;
-        ca[3]=d;
-        ca[4]=e;
+    ca[3]=d;
+    ca[4]=e;
     ca[5]=f;
     ca[6]=g;
-        ca[7]=h;
-        ca[8]=j;
+    ca[7]=h;
+    ca[8]=j;
     ca[9]=k;
     ca[10]=l;
-        ca[11]=m1;
-        ca[12]=n;
+    ca[11]=m1;
+    ca[12]=n;
     ca[13]=o;
     ca[14]=p;
-        ca[15]=q;
-        ca[16]=r;
+    ca[15]=q;
+    ca[16]=r;
     ca[17]=s;
     ca[18]=t;
-        ca[19]=u;
-        ca[20]=v;
+    ca[19]=u;
+    ca[20]=v;
     ca[21]=w;
     ca[22]=x;
 
@@ -476,52 +465,21 @@ node* createStar(int m){
 ,6);
                         node o(210.0f, _terrain->getHeight(210, 220) + 5, 220.0f
                                  ,3);
-//						node p(121,-11,20,3);
-//						node q(225,-11,211,3);
-//
-//
-//						node r(105,-11,201,3);
-//								node s(110,-11,110,3);
-//								node t(50,0,50,2);
-//								node u(140,0,135,2);
-//								node v(85,0,31,2);
-//										node w(112,0,171,2);
-//										node x(56,0,212,2);
-//											node y(30,0,30,1);
-//											node z(60,0,60,1);
-//											node a1(30,0,30,1);
-//											node b1(60,0,60,1);
-//											node c1(30,0,30,1);
-//											node d1(60,0,60,1);
-//										node e1(30,0,30,1);
-//										node f1(5.0,0,5.0,1);
-//							node g1(30,0,30,1);
 
-        ca[0]=a;
+    ca[0]=a;
     ca[1]=b;
     ca[2]=c;
-        ca[3]=d;
-        ca[4]=e;
+    ca[3]=d;
+    ca[4]=e;
     ca[5]=f;
     ca[6]=g;
-        ca[7]=h;
-        ca[8]=j;
+    ca[7]=h;
+    ca[8]=j;
     ca[9]=k;
     ca[10]=l;
-        ca[11]=m1;
-        ca[12]=n;
+    ca[11]=m1;
+    ca[12]=n;
     ca[13]=o;
-//	ca[14]=p;
-//		ca[15]=q;
-//		ca[16]=r;
-//	ca[17]=s;
-//	ca[18]=t;
-//		ca[19]=u;
-//		ca[20]=v;
-//	ca[21]=w;
-//	ca[22]=x;
-//
-
 
 return ca;
 
@@ -1324,9 +1282,9 @@ glPushMatrix();
         glPopMatrix();
         glPopMatrix();
         glPushMatrix();
-            glTranslatef(128,-23,128);
-    glScalef(1000,1000,1000) ;
-    glEnable(GL_TEXTURE_2D);
+        glTranslatef(128,-23,128);
+        glScalef(1000,1000,1000) ;
+        glEnable(GL_TEXTURE_2D);
         glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
         glBindTexture(GL_TEXTURE_2D, _textureId_water);
 
@@ -1348,20 +1306,17 @@ glPushMatrix();
     glDisable(GL_TEXTURE_2D) ;
     glPopMatrix();
 
+        glColor3f(1,1,0) ;
+        glPushMatrix();
+        if(arr[0]==false){
+            glTranslatef(190.0f,_terrain->getHeight(190,40)+5, 40.0f);
 
+        }
+        else{
+            glTranslatef(10000,_terrain->getHeight(190,40)+5, 40.0f);
 
-
-                        glColor3f(1,1,0) ;
-                                            glPushMatrix();
-                                            if(arr[0]==false){
-                                                glTranslatef(190.0f,_terrain->getHeight(190,40)+5, 40.0f);
-
-                                            }
-                                            else{
-                                                glTranslatef(10000,_terrain->getHeight(190,40)+5, 40.0f);
-
-                                            }
-                                        //	glTranslatef(190.0f,_terrain->getHeight(190,40)+5, 40.0f);
+        }
+    //	glTranslatef(190.0f,_terrain->getHeight(190,40)+5, 40.0f);
                             glCallList(DLid_star);
                         //	glColor3f(1, 1, 1);
                             glPopMatrix();
@@ -1458,7 +1413,7 @@ glPushMatrix();
                             glPopMatrix();
                             glPushMatrix();
                             if(arr[9]==true){
-                                                            glTranslatef(10000.0f, _terrain->getHeight(215, 80) + StarHeight, 80.0f);
+                                            glTranslatef(10000.0f, _terrain->getHeight(215, 80) + StarHeight, 80.0f);
 
                                                         }
                             else{
@@ -1481,7 +1436,7 @@ glPushMatrix();
                             glPopMatrix();
                             glPushMatrix();
                             if(arr[11]==true){
-                                                            glTranslatef(10000.0f, _terrain->getHeight(215, 80) + StarHeight, 80.0f);
+                                         glTranslatef(10000.0f, _terrain->getHeight(215, 80) + StarHeight, 80.0f);
 
                                                         }
                             else{
@@ -1493,7 +1448,7 @@ glPushMatrix();
                             glPopMatrix();
                             glPushMatrix();
                             if(arr[12]==true){
-                                                                                        glTranslatef(10000.0f, _terrain->getHeight(215, 80) + StarHeight, 80.0f);
+                                glTranslatef(10000.0f, _terrain->getHeight(215, 80) + StarHeight, 80.0f);
 
                                                                                     }
 
@@ -1507,7 +1462,7 @@ glPushMatrix();
                             glPopMatrix();
                             glPushMatrix();
                             if(arr[13]==true){
-                                                                                        glTranslatef(10000.0f, _terrain->getHeight(215, 80) + StarHeight, 80.0f);
+                                    glTranslatef(10000.0f, _terrain->getHeight(215, 80) + StarHeight, 80.0f);
 
                                                                                     }
                             else{
@@ -1588,17 +1543,9 @@ if(ai==true ||bike.center.x>256||bike.center.z>256||bike.center.x<-1||bike.cente
     if(bike.center.y-heightAt(_terrain,bike.center.x,bike.center.z)>0.150 ||bike.center.x>256||bike.center.z>256||bike.center.x<-1||bike.center.z<-1){
 
             if(bike.center.x>257||bike.center.z>257||bike.center.x<-2||bike.center.z<-2){
-                                        cout<<"yup its working"<<endl;
-//                                        if(printScore){
-//                                            ofstream my;
-//                                            my.open("E:/high.txt",ios_base::app);
-//                                            my<<score<<endl;
-//                                            my.close();
-//                                            printScore=false;
-//                                        }
+                                        
+//                                       
                                             gameOver=true;
-
-                                    //	exit(0);
                                     }
 
 
@@ -1632,7 +1579,6 @@ if(boost){
     if(pressedl){
 
         left();
-
         rotate_xl=-20;
     }
 
@@ -1683,10 +1629,6 @@ else{
 
 
 int start1(int i) {
-//	int i;
-//	cout<<"print 1"<<endl;
-//	cin >> i;
-//	cout<<"value is "<<i<<endl;
 
 
     if(i==1){

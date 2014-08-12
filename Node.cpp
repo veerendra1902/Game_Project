@@ -34,18 +34,3 @@ using namespace std;
 
 
 
-
-//
-//int main(){
-//
-//	node ca[10];
-//
-//	node a(1,1,1,1);
-//
-//	ca[1]=a;
-//a.Print();
-//
-//	cout<<ca[1].x;
-//
-//
-//}

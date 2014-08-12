@@ -33,18 +33,6 @@ public :
 
 };
 
-//class bike{
-//public:
-//	float f,s;
-//	bike();
-//	bike(float f,float s);
-//	vector front(vector p,vector v,bike b);
-//	vector back(vector p,vector v,bike b);
-//	vector left(vector p,vector v,bike b);
-//	vector right(vector p,vector v,bike b);
-//
-//};
-
 
 
 #endif /* VECTOR_H_ */
